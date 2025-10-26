@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Street Bites - Food Truck</title>
+    <meta
+      name="description"
+      content="Street Bites - Modern food truck med god mat på olika platser i staden. Se vår meny och hitta var vi befinner oss!"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <h1>🚚 Street Bites</h1>
+        </div>
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active">Hem</a>
+          <a href="#menu" class="nav-link">Meny</a>
+          <a href="#locations" class="nav-link">Platser</a>
+          <a href="#about" class="nav-link">Om oss</a>
+          <a href="#contact" class="nav-link">Kontakt</a>
+        </div>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Välkommen till Street Bites<br />
+          🍔 🌮 🍟
+        </h1>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Se vår meny</a>
+          <a href="#locations" class="btn btn-secondary">Hitta oss</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Vår meny</h2>
+        </div>
+        <div class="menu-categories" id="menuCategories">
+          <!-- Menu categories will be loaded here -->
+          <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>Laddar meny...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="locations-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Hitta oss</h2>
+        </div>
+        <div class="locations-content">
+          <div class="location-card">
+            <h3> Aktuella platser</h3>
+            <p>
+              Vi rör oss mellan olika platser i staden. Följ oss på sociala
+              medier för att se var vi befinner oss!
+            </p>
+            <div class="location-info">
+              <div class="location-item">
+                <h4>📍 Tantolunden</h4>
+                <p>Måndag - Fredag<br>11:00 - 14:00</p>
+              </div>
+              <div class="location-item">
+                <h4>📍 Rålambshovsparken</h4>
+                <p>Lördag - Söndag<br>12:00 - 16:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Om Street Bites</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Vår historia</h3>
+            <p>
+              Street Bites startade som en dröm om att ta god mat till folket.
+              Vi tror på att mat ska vara tillgänglig, prisvärd och framför allt
+              - god!
+            </p>
+            <p>
+              Vår food truck rör sig mellan olika platser i staden för att nå så
+              många som möjligt med vår goda mat.
+            </p>
+
+            <h3>Vår vision</h3>
+            <p>
+              Vi vill göra god mat tillgänglig för alla, oavsett var du befinner
+              dig i staden. Med fokus på färska ingredienser och snabb service.
+            </p>
+          </div>
+          <div class="about-features">
+            <h3>Varför välja oss?</h3>
+            <div class="features-grid">
+              <div class="feature">
+                <h4>🥗 Färska ingredienser</h4>
+                <p>Vi använder endast de färskaste ingredienserna från lokala leverantörer</p>
+              </div>
+              <div class="feature">
+                <h4>⚡️ Snabb service</h4>
+                <p>Din mat är redo på rekordtid utan att kompromissa med kvalitet</p>
+              </div>
+              <div class="feature">
+                <h4> 🌿 Miljövänligt</h4>
+                <p>Vi följer hållbara matvanor och använder miljövänliga förpackningar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Kontakta oss</h2>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Kontaktinformation</h3>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <span>Telefon: 070-123 45 67</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <span>E-post: info@streetbites.se</span>
+            </div>
+
+          </div>
+          <div class="contact-form">
+            <h3>Skicka meddelande</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Meddelande</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Skicka meddelande
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Street Bites</h3>
+            <p>Food Truck</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Hem</a>
+            <a href="#menu">Meny</a>
+            <a href="#locations">Platser</a>
+            <a href="#about">Om oss</a>
+            <a href="#contact">Kontakt</a>
+          </div>
+     
+
+          <div class="footer-contact">
+            <h3>Kontaktinformation</h3>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <span>Telefon: 070-123 45 67</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <span>E-post: info@streetbites.se</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Street Bites. Alla rättigheter förbehållna.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
