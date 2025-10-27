@@ -555,6 +555,10 @@ section {
   gap: 3rem;
 }
 
+.about-text {
+  max-width: 50rem;
+  margin: 0 auto;
+}
 .about-text h3 {
   color: #017963;
   margin-bottom: 1rem;
