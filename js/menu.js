@@ -5,7 +5,7 @@
 
 class MenuManager {
   constructor() {
-    this.apiBaseUrl = "http://localhost:3000/api"; // Backend API URL
+    this.apiBaseUrl = "https://dt207g-moment5.onrender.com/api"; // Backend API URL
     this.menuCategories = [];
     this.init();
   }
