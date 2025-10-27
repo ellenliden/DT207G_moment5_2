@@ -1,0 +1,29 @@
+{
+  "name": "street-bites-frontend",
+  "version": "1.0.0",
+  "description": "Publik webbplats för Street Bites food truck",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "food-truck",
+    "restaurant",
+    "frontend",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Ellen Liden",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ellenliden/street-bites-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ellenliden/street-bites-frontend/issues"
+  },
+  "homepage": "https://github.com/ellenliden/street-bites-frontend#readme"
+}
