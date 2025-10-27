@@ -314,7 +314,8 @@ section {
 
 /* Menu Section */
 .menu-section {
-  background: #ffffff;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .menu-categories {
@@ -397,8 +398,8 @@ section {
 
 .menu-item-image {
   flex-shrink: 0;
-  width: 60px;
-  height: 60px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 4px;
   overflow: hidden;
   background: #f8f9fa;
@@ -544,6 +545,8 @@ section {
 /* About Section */
 .about-section {
   background: #f8f9fa;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .about-content {
@@ -566,10 +569,7 @@ section {
 }
 
 .about-features {
-  background: white;
   padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid #e9ecef;
 }
 
 .about-features h3 {
@@ -588,7 +588,7 @@ section {
 
 .feature {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
   background: #f8f9fa;
   border: 1px solid #e9ecef;
@@ -640,12 +640,14 @@ section {
 /* Contact Section */
 .contact-section {
   background: #fafafa;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .contact-info h3 {
@@ -842,6 +844,27 @@ section {
 
   .hero-title {
     display: none;
+  }
+
+  .menu-section {
+    max-width: 100%;
+  }
+  .menu-item-image {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .menu-item-price {
+    font-size: 1rem;
+  }
+
+  .menu-item-info p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .menu-item-info .allergens {
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
 
   .features-grid {
